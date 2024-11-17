@@ -2,6 +2,9 @@
 
 A simple React app that displays the current time and date, updating every second using Recoil for state management.
 
+## Live Demo
+🚀 [Click here to see the live demo](https://digitalclock-three-liart.vercel.app/)
+
 ## Features
 
 - Displays the current **time** (`hh:mm:ss`).
