@@ -1,8 +1,22 @@
-# React + Vite
+# Current Time App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app that displays the current time and date, updating every second using Recoil for state management.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Displays the current **time** (`hh:mm:ss`).
+- Displays the current **date** (`MM/DD/YYYY`).
+- Updates every second.
+- Optimized with **React.memo** to prevent unnecessary re-renders.
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **Recoil**: For state management.
+- **CSS**: For styling.
+
+## Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/current-time-app.git
