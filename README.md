@@ -71,8 +71,6 @@ This repository is a collection of foundational projects I built while learning 
 
 
 ### More to do:
-Here's a curated list of progressively challenging projects to build your confidence and skills in React, Express, and MongoDB. This roadmap will take you from simple apps to complex, freelance-level projects:
-
 ---
 
 ### **Beginner Projects**
