@@ -64,5 +64,5 @@ This repository is a collection of foundational projects I built while learning 
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/basecamp-code.git
+   git clone https://github.com/mohfazam/basecamp-code.git
    cd basecamp-code
