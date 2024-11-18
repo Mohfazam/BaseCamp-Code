@@ -90,7 +90,7 @@ This repository is a collection of foundational projects I built while learning 
    - Features: Calculate tip based on bill amount and percentage.  
    - Goal: Focus on simple math logic and React forms.
 
-5. **BMI Calculator**  
+5. **BMI Calculator**  - ✔
    - Features: Input weight and height to calculate BMI.  
    - Goal: Practice conditional rendering and forms.
 
