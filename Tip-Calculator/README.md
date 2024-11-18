@@ -1,8 +1,20 @@
-# React + Vite
+# Tip Calculator  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based Tip Calculator to calculate the tip amount and display the total bill based on user inputs.
 
-Currently, two official plugins are available:
+## Features  
+- Enter a bill amount and tip percentage.  
+- Automatically calculates and displays the tip amount.  
+- Updates the total in real-time.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo  
+[Chttps://tipcalculator-eosin-one.vercel.app/](#) 
+
+## How to Use  
+1. Enter the bill amount in the first input field.  
+2. Enter the tip percentage in the second input field.  
+3. View the calculated tip and total bill instantly.  
+
+---
+
+Built with ❤️ using React.
