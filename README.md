@@ -6,7 +6,7 @@ This repository is a collection of foundational projects I built while learning 
 
 ## Projects Overview
 
-### 1. **Counter App**
+### 1. **Counter App** - ✔
    - **Description**: A basic React application with buttons to increase, decrease, and reset a counter.  
    - **Tech Stack**: React.  
    - **Key Features**:  
@@ -74,15 +74,15 @@ This repository is a collection of foundational projects I built while learning 
 ---
 
 ### **Beginner Projects**
-1. **Counter App**  
+1. **Counter App**  - ✔
    - Features: Increment, decrement, reset button.  
    - Goal: Practice state management.
 
-2. **Digital Clock**  
+2. **Digital Clock**  - ✔
    - Features: Display current time with automatic updates.  
    - Goal: Learn React hooks like `useEffect`.
 
-3. **Color Picker**  
+3. **Color Picker** - ✔
    - Features: Choose colors and display their HEX/RGB codes.  
    - Goal: Practice event handling and basic CSS.
 
