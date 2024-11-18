@@ -1,8 +1,24 @@
-# React + Vite
+# Color Picker 🎨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React-based color picker application that lets users select a color and view its HEX and RGB codes instantly.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features:
+- Select any color using an intuitive color picker.
+- Display the selected color's **HEX** code.
+- Display the corresponding **RGB** value.
+
+---
+
+## Live Demo:
+👉 [https://colorpicker-mauve.vercel.app/](#)  
+
+*(Replace `#` with your deployed project URL)*
+
+---
+
+## Getting Started:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mohfazam/color-picker.git
