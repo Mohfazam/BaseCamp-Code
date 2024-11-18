@@ -86,7 +86,7 @@ This repository is a collection of foundational projects I built while learning 
    - Features: Choose colors and display their HEX/RGB codes.  
    - Goal: Practice event handling and basic CSS.
 
-4. **Tip Calculator**  
+4. **Tip Calculator**  - ✔
    - Features: Calculate tip based on bill amount and percentage.  
    - Goal: Focus on simple math logic and React forms.
 
