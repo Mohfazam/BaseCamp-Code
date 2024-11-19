@@ -18,6 +18,11 @@ function TodoItem() {
     }
   }
 
+
+  function deleteTodo(index){
+    setTodos(todos.filter((_, i) => i != index));
+  }
+
   return (
     <div>
       <p>Todo List</p>
@@ -31,7 +36,12 @@ function TodoItem() {
 
       <ul>
         {todos.map((task, index) => (
-          <li key={index}>{task}</li>
+          <li key={index} style={{border: '1px solid black'}}>
+            {task}   <br />
+            <button onClick={() => deleteTodo(index)}>Delete</button>
+            
+          </li>
+          
         ))}
       </ul>
     </div>
