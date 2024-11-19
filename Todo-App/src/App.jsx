@@ -2,19 +2,19 @@ import { useState } from 'react';
 import './App.css';
 
 function TodoItem() {
-  const [todo, setTodo] = useState(''); // To hold the input value
-  const [todos, setTodos] = useState([]); // To hold the list of tasks
+  const [todo, setTodo] = useState(''); 
+  const [todos, setTodos] = useState([]); 
 
-  // Update input value
+  
   function handleInputChange(e) {
     setTodo(e.target.value);
   }
 
-  // Add a task to the list
+  
   function addTodo() {
     if (todo.trim()) {
-      setTodos([...todos, todo]); // Append task to list
-      setTodo(''); // Clear input field
+      setTodos([...todos, todo]); 
+      setTodo(''); 
     }
   }
 
