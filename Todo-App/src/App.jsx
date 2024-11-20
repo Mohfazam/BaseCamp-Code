@@ -1,59 +1,51 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
-function TodoItem() {
-  const [todo, setTodo] = useState(''); 
-  const [todos, setTodos] = useState([]); 
+function App() {
+  const [listTodo, setlistTodo] = useState([]);
 
-  
-  function handleInputChange(e) {
-    setTodo(e.target.value);
-  }
-
-  
-  function addTodo() {
-    if (todo.trim()) {
-      setTodos([...todos, todo]); 
-      setTodo(''); 
-    }
-  }
-
-
-  function deleteTodo(index){
-    setTodos(todos.filter((_, i) => i != index));
+  function addTodo(text) {
+    setlistTodo([...listTodo, text]);
   }
 
   return (
-    <div>
-      <p>Todo List</p>
+    <>
+      <div className="main-container">
+        <div className="center-container">
+          <TodoInput addTodo={addTodo} />
+        </div>
+      </div>
+    </>
+  );
+}
+
+function TodoInput({addTodo}) {
+  const [inputText, setInputText] = useState("");
+
+  return (
+    <div className="input-containeer">
       <input
         type="text"
-        placeholder="Enter a task"
-        value={todo}
-        onChange={handleInputChange}
+        placeholder="Enter your todo"
+        className="input-box-todo"
+        value={inputText}
+        onChange={(e) => setInputText(e.target.value)}
       />
-      <button onClick={addTodo}>Add Task</button>
 
-      <ul>
-        {todos.map((task, index) => (
-          <li key={index} style={{border: '1px solid black'}}>
-            {task}   <br />
-            <button onClick={() => deleteTodo(index)}>Delete</button>
-            
-          </li>
-          
-        ))}
-      </ul>
+      <button className="add-btn" onClick={() => {
+        addTodo(inputText);
+        setInputText("");
+        } }>
+        +
+      </button>
     </div>
   );
 }
 
-function App() {
-  return (
-    <>
-      <TodoItem />
-    </>
-  );
+
+
+function TodoList(){
+
 }
 
 export default App;
