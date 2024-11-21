@@ -5,7 +5,9 @@ function App() {
   const [listTodo, setlistTodo] = useState([]);
 
   function addTodo(text) {
-    setlistTodo([...listTodo, text]);
+    if(text !== ""){
+      setlistTodo([...listTodo, text]);
+    }
   }
 
   return (
@@ -36,6 +38,13 @@ function App() {
 function TodoInput({ addTodo }) {
   const [inputText, setInputText] = useState("");
 
+  function handleEnterFunctionality(e) {
+    if(e.key === "Enter"){
+      addTodo(inputText);
+          setInputText("");
+    }
+  }
+
   return (
     <div className="input-containeer">
       <input
@@ -44,6 +53,7 @@ function TodoInput({ addTodo }) {
         className="input-box-todo"
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}
+        onKeyDown={handleEnterFunctionality}
       />
 
       <button
