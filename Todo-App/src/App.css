@@ -63,7 +63,7 @@ body{
 }
 .list-item{
   list-style-type: none;
-  /* background-color: #596e8b; */
+  background-color: #596e8b;
   border:2px solid rgb(161, 158, 158);
   color:white;
   padding:3px;
@@ -92,3 +92,13 @@ body{
 .icon-delete:hover{
   color: red;
 }
+
+#check-icon{
+  padding-right: 2px;
+  right: 10px;
+}
+
+#check-icon:hover{
+  color: rgb(5, 114, 27);
+}
+
