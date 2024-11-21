@@ -16,7 +16,7 @@ This repository is a collection of foundational projects I built while learning 
      - State management with `useState`.  
      - Handling events and updating the UI dynamically.
 
-### 2. **Todo List**
+### 2. **Todo List** ✔
    - **Description**: A simple task management application where users can add, edit, delete, and mark tasks as complete.  
    - **Tech Stack**: React.  
    - **Key Features**:  
