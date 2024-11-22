@@ -3,9 +3,10 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import axios from 'axios';
 import dotenv from 'dotenv';
-const apiKey = import.meta.env.WEATHER-API;
+const apiKey = import.meta.env.VITE_WEATHER_API_KEY;
 
-dotenv.config();
+
+
 
 
 import './App.css'
@@ -45,7 +46,7 @@ function Fetchweather(){
         params: {
           q: city,
           limit: 1,
-          appid: WEATHER-API,
+          appid: apiKey,
         },
       });
       if(response.data.length > 0){
@@ -65,7 +66,7 @@ function Fetchweather(){
         params: {
           lat: lat,
           lon: lon,
-          appid: WEATHER-API,
+          appid: apiKey,
           units: "metric"
         }
       });
