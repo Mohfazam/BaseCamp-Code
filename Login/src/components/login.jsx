@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export function Login(){
     return(
@@ -6,8 +7,6 @@ export function Login(){
         <h1>login</h1>
         
         <div>
-        <h3>User Name</h3>
-        <input type="text" />
 
         <h3>Email</h3>
         <input type="text" />
@@ -18,12 +17,12 @@ export function Login(){
 
         <div>
             <br />
-        <button>Signup</button>
+        <button>Login</button>
         
         </div>
         <br />
         <br />
-        <button>Login</button>
+        <Link to="/">SignUp</Link>
         
         </>
     )
