@@ -29,7 +29,7 @@ This repository is a collection of foundational projects I built while learning 
      - Conditional rendering in React.  
      - Form handling.
 
-### 3. **Weather App**
+### 3. **Weather App** ✔
    - **Description**: A weather application that fetches and displays weather data based on user input.  
    - **Tech Stack**: React, OpenWeather API.  
    - **Key Features**:  
