@@ -8,13 +8,18 @@ const bodyParser = require("body-parser");
 const User = require("./models");
 
 const app = express();
+app.use(express.json());
 
 app.use(cors());
-app.use(bodyParser.json());
 
 
-mongoose.connect("mongodb+srv://cluster0.hfdziwx.mongodb.net/?retryWrites=true&w=majority");
-
+mongoose.connect("")
+  .then(() => {
+    console.log("Successfully connected to MongoDB");
+  })
+  .catch((error) => {
+    console.error("MongoDB connection error:", error);
+  });
 
 app.post("/", async(req, res) => {
     const { name, email, password } = req.body;
@@ -32,6 +37,7 @@ app.post("/", async(req, res) => {
         const newUser = new User({name, email, password});
 
         await newUser.save();
+        res.status(201).json({message: "You have signed up successfully"});
     }catch(error){
         console.log("Error while signing you up", error);
     }
