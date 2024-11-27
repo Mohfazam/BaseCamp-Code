@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export function Login(){
     return(
         <>
-        <h1>login</h1>
+        <h1>Login</h1>
         
         <div>
 

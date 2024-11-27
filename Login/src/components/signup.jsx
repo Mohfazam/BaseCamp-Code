@@ -13,32 +13,26 @@ export function Signup(){
 
     function handlename(e){
         const namee = e.target.value;
-        setname(name);
+        setname(namee);
     }
 
     function handleEmail(e){
-        const email = e.target.value;
-        setemail(email);
+        const emaill = e.target.value;
+        setemail(emaill);
     }
 
     function handlePassword(e){
-        const password = e.target.value;
-        setpassword(password);
+        const passwordd = e.target.value;
+        setpassword(passwordd);
 
     }
 
     async function handlesignup(){
-
-        
-        
+  
         const userData = {name, email, password};
-        // if(!name || !email || !password){
-        //     alert("Please fill all the fields");
-        //     return;
-        // }
 
         try{
-            const respone = await axios.post("http://localhost:5000/signup", userData);
+            const respone = await axios.post("http://localhost:3000/", userData).then(response => console.log(response.data));
             alert("You have signed up successfully");
         }catch(error){
             console.log("Error while signing you up", error);
