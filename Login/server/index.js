@@ -3,17 +3,23 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
+const dotenv = require("dotenv");
+dotenv.config();
 
+
+const MONGO_URL = process.env.MONGO_URL;
 
 const User = require("./models");
 
 const app = express();
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:5173"
+}));
 
 
-mongoose.connect("")
+mongoose.connect(MONGO_URL)
   .then(() => {
     console.log("Successfully connected to MongoDB");
   })
