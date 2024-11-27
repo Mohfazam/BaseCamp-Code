@@ -9,6 +9,7 @@ dotenv.config();
 
 const MONGO_URL = process.env.MONGO_URL;
 
+
 const User = require("./models");
 
 const app = express();
