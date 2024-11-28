@@ -40,7 +40,7 @@ This repository is a collection of foundational projects I built while learning 
      - Handling API responses and managing asynchronous operations.  
      - Managing component state and props.
 
-### 4. **Simple Authentication**
+### 4. **Simple Authentication** ✔
    - **Description**: A basic user authentication system built using Express and MongoDB.  
    - **Tech Stack**: Express.js, MongoDB, React (optional for frontend).  
    - **Key Features**:  
