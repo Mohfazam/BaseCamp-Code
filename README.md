@@ -6,7 +6,7 @@ Welcome to the **BaseCamp-Code** repository! This collection showcases a variety
 
 ## Projects Included
 
-### 1. **Weather App** ✔
+### 1. **Weather App**
 
 **Description**: A simple weather application that provides real-time weather updates based on user input. The app fetches data from an external weather API and displays the current weather conditions for a given location.
 
@@ -19,7 +19,7 @@ Welcome to the **BaseCamp-Code** repository! This collection showcases a variety
 
 ---
 
-### 2. **Login** ✔
+### 2. **Login**
 
 **Description**: A user authentication system that includes login and signup functionalities. This project showcases input validation, form handling, and basic front-end security.
 
@@ -32,7 +32,7 @@ Welcome to the **BaseCamp-Code** repository! This collection showcases a variety
 
 ---
 
-### 3. **Tip Calculator** ✔
+### 3. **Tip Calculator**
 
 **Description**: A simple tip calculator that helps users calculate tip amounts and total bill amounts based on the bill value and desired tip percentage.
 
@@ -45,7 +45,7 @@ Welcome to the **BaseCamp-Code** repository! This collection showcases a variety
 
 ---
 
-### 4. **Todo App** ✔
+### 4. **Todo App**
 
 **Description**: A task management app that helps users add, complete, and remove tasks efficiently. This project demonstrates handling user input, dynamically adding and removing items, and saving data in local storage.
 
@@ -58,7 +58,7 @@ Welcome to the **BaseCamp-Code** repository! This collection showcases a variety
 
 ---
 
-### 5. **Bmi Calculator** ✔
+### 5. **Bmi Calculator**
 
 **Description**: A simple BMI calculator that allows users to input their weight and height to calculate their body mass index. This app helps users understand their BMI status.
 
@@ -71,7 +71,7 @@ Welcome to the **BaseCamp-Code** repository! This collection showcases a variety
 
 ---
 
-### 6. **Clock** ✔
+### 6. **Clock**
 
 **Description**: A real-time digital clock that displays the current time and updates it in real time. This project showcases the use of JavaScript for real-time data updating and user interaction.
 
@@ -84,11 +84,11 @@ Welcome to the **BaseCamp-Code** repository! This collection showcases a variety
 
 ---
 
-### 7. **Color Picker** ✔
+### 7. **Color Picker**
 
 **Description**: A color picker tool that allows users to pick colors from a palette and see the color code. This project demonstrates handling user input, manipulating colors, and displaying real-time results.
 
-**Key Features**: 
+**Key Features**:
 - Choose colors from a color palette or enter hex color values.
 - Display the color code and a preview of the selected color.
 - User-friendly interface with color adjustments.
@@ -97,7 +97,7 @@ Welcome to the **BaseCamp-Code** repository! This collection showcases a variety
 
 ---
 
-### 8. **Counter App** ✔
+### 8. **Counter App**
 
 **Description**: A simple counter app that helps users increase or decrease a counter value with the click of buttons. This project demonstrates event handling and dynamic updates in the UI.
 
