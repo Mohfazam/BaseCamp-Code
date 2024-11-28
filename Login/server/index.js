@@ -16,7 +16,9 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: "http://localhost:5173",
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    credentials: true
 }));
 
 
@@ -49,6 +51,20 @@ app.post("/", async(req, res) => {
         console.log("Error while signing you up", error);
     }
 
+});
+
+app.get("/login", async(req, res) => {
+  const {email, password} = req.query;
+
+  console.log("Login attempted");
+
+  const user = await User.findOne({email, password});
+  if(user){
+    res.status(200).json({message: "You have logged in successfully"});
+  }
+  else{
+    res.status(400).json({message: "Invalid email or password"});
+  }
 });
 
 

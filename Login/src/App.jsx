@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import { Signup } from './components/signup';
 import { Login } from './components/login';
+import { User } from './components/user';
 
 import { createBrowserRouter, RouterProvider, Routes, Route } from 'react-router-dom';
 
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login/>
+  },
+  {
+    path: "/User",
+    element: <User/>
   }
 ]);
 

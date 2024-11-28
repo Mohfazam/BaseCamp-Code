@@ -45,9 +45,6 @@ export function Signup(){
             console.log("Error while signing you up", error);
         }
 
-        if(LoggedIn){
-
-        }
     }
 
     return(
