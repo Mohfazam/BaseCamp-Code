@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
+
+
 
 
 export function Signup(){
@@ -8,6 +11,8 @@ export function Signup(){
     const [name, setname] = useState("");
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
+
+    const navigate = useNavigate();
 
 
 
@@ -28,14 +33,20 @@ export function Signup(){
     }
 
     async function handlesignup(){
+        
   
         const userData = {name, email, password};
 
         try{
-            const respone = await axios.post("http://localhost:3000/", userData).then(response => console.log(response.data));
+            const respone = await axios.post("http://localhost:3000/", userData).then( response => console.log(response.data));
             alert("You have signed up successfully");
+            navigate("/login");
         }catch(error){
             console.log("Error while signing you up", error);
+        }
+
+        if(LoggedIn){
+
         }
     }
 
